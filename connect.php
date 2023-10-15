@@ -1,7 +1,7 @@
 <?php
 include '../../../../conf/p_config.php';
 
-$connection = new mysqli($servername, $username, $pwd, $dbname);
+$connection = new mysqli($servername, $plant_username, $plant_password, $dbname);
 
 if ($connection->connect_error) {
     die("Connection failed: " . $connection->connect_error);
