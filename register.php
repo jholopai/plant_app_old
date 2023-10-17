@@ -42,6 +42,7 @@ if (isset($_POST['register-form-submit'])){
 			$errorMessage = "Something went wrong. Please try again later.";
 		}
 	}
+
 	if (!empty($errorMessage)) {
 		$notification = "$errorMessage<br>Registration failed.";
 		$successOrDanger = "danger";

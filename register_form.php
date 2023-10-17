@@ -23,11 +23,11 @@ include 'register.php';
 		<input type="password" class="col-xs-4" name="password2" id="password2" placeholder="Password" required>
 	</div>
 	<button name="register-form-submit" type="submit" class="btn btn-primary">Register</button>
-	<div class="register-notification">
-		<div id="errorNotification" class="alert alert-<?= $successOrDanger ;?> alert-dismissible fade show <?= $notificationDisplay ?? ""; ?>" role="alert">
-			<p><?= $notification; ?></p>
-		</div>
-	</div>
 </form>
+<div class="notification-area">
+	<div id="registerNotification" class="alert alert-<?= $successOrDanger ;?> alert-dismissible fade show <?= $notificationDisplay ?? ""; ?>" role="alert">
+		<p><?= $notification; ?></p>
+	</div>
+</div>
 
 <?php include 'footer.html' ?>
