@@ -27,6 +27,7 @@ if (isset($_POST['login-form-submit'])){
 		if (password_verify($password, $password_hash)){
 			if (!session_id()) session_start();
 			$_SESSION['username'] = $username;
+			$_SESSION['user_id'] = $id;
 			header("location: ".$site_path."index.php");  
 		}  
 	}
